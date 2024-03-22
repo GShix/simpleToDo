@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simple To Do</h2>
+    <div>
+        <input type="text" id="todoInput" name="todoInput" placeholder="Enter your new task" >
+        <button type="submit" onclick="addTask()">Add</button>
+    </div>
+
+    <div>
+        <label for="searchTask" >Search:</label>
+        <input type="text" id="searchTask" name="searchTask" oninput="filterTasks()" placeholder="Enter a keyword">
+    </div>
+
+    <!-- ul -->
+    <div class="flex justify-center"><ul  id="todoList"></ul></div>
+
+    <div class="flex justify-center top-margin">
+        <p>Total tasks: <span id="totalTasks">0</span></p>
+        <p>Completed tasks: <span id="completedTasks">0</span></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
